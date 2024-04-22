@@ -77,44 +77,72 @@ class CustomBottomBarState extends State<CustomBottomBar> {
         type: BottomNavigationBarType.fixed,
         items: List.generate(bottomMenuList.length, (index) {
           return BottomNavigationBarItem(
-            icon: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                CustomImageView(
-                  imagePath: bottomMenuList[index].icon,
-                  height: 30.adaptSize,
-                  width: 30.adaptSize,
-                  color: appTheme.greenA700,
-                ),
-                Text(
-                  bottomMenuList[index].title ?? "",
-                  style: CustomTextStyles.labelMediumGreenA700.copyWith(
-                    color: appTheme.greenA700,
+            icon: Container(
+              decoration: AppDecoration.outlineBlack,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CustomImageView(
+                    imagePath: bottomMenuList[index].icon,
+                    height: 30.adaptSize,
+                    width: 30.adaptSize,
+                    color: appTheme.greenA70001,
                   ),
-                )
-              ],
+                  Padding(
+                    padding: EdgeInsets.only(bottom: 1.v),
+                    child: Text(
+                      bottomMenuList[index].title ?? "",
+                      style: CustomTextStyles.labelMediumGreenA70001.copyWith(
+                        color: appTheme.greenA70001,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
-            activeIcon: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                CustomImageView(
-                  imagePath: bottomMenuList[index].activeIcon,
-                  height: 30.adaptSize,
-                  width: 30.adaptSize,
-                  color: appTheme.gray700,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 1.v),
-                  child: Text(
-                    bottomMenuList[index].title ?? "",
-                    style: theme.textTheme.labelMedium!.copyWith(
-                      color: appTheme.gray700,
+            activeIcon: SizedBox(
+              height: 50.v,
+              width: 63.h,
+              child: Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      decoration: AppDecoration.outlineBlack,
+                      child: CustomImageView(
+                        imagePath: bottomMenuList[index].activeIcon,
+                        height: 30.adaptSize,
+                        width: 30.adaptSize,
+                        color: appTheme.gray700,
+                        margin: EdgeInsets.only(
+                          left: 16.h,
+                          right: 16.h,
+                          bottom: 20.v,
+                        ),
+                      ),
                     ),
                   ),
-                )
-              ],
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                        left: 1.h,
+                        top: 31.v,
+                        right: 1.h,
+                      ),
+                      child: Text(
+                        bottomMenuList[index].title ?? "",
+                        style: theme.textTheme.labelMedium!.copyWith(
+                          color: appTheme.gray700,
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
             label: '',
           );

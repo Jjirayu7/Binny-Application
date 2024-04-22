@@ -12,7 +12,7 @@ class ContactsalesItemWidget extends StatelessWidget {
     return SizedBox(
       width: 77.h,
       child: Padding(
-        padding: EdgeInsets.only(bottom: 2.v),
+        padding: EdgeInsets.only(bottom: 1.v),
         child: Column(
           children: [
             CustomImageView(
@@ -20,9 +20,14 @@ class ContactsalesItemWidget extends StatelessWidget {
               height: 35.adaptSize,
               width: 35.adaptSize,
             ),
-            Text(
-              "ติดต่อขายขยะ",
-              style: CustomTextStyles.titleSmallGray900,
+            SizedBox(
+              width: 77.h,
+              child: Text(
+                "ติดต่อขายขยะ",
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: theme.textTheme.titleSmall,
+              ),
             )
           ],
         ),

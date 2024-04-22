@@ -23,10 +23,6 @@ class CustomTextStyles {
   static get bodyLargeRegular => theme.textTheme.bodyLarge!.copyWith(
         fontWeight: FontWeight.w400,
       );
-  static get bodyMediumGray600 => theme.textTheme.bodyMedium!.copyWith(
-        color: appTheme.gray600,
-        fontSize: 13.fSize,
-      );
   static get bodySmallGray400 => theme.textTheme.bodySmall!.copyWith(
         color: appTheme.gray400,
         fontSize: 10.fSize,
@@ -35,8 +31,8 @@ class CustomTextStyles {
         color: appTheme.green200,
         fontSize: 10.fSize,
       );
-  static get bodySmallGreenA700 => theme.textTheme.bodySmall!.copyWith(
-        color: appTheme.greenA700,
+  static get bodySmallGreenA70001 => theme.textTheme.bodySmall!.copyWith(
+        color: appTheme.greenA70001,
       );
   static get bodySmallInter => theme.textTheme.bodySmall!.inter.copyWith(
         fontSize: 11.fSize,
@@ -68,25 +64,19 @@ class CustomTextStyles {
         color: appTheme.black90001,
         fontWeight: FontWeight.w600,
       );
-  static get headlineSmallIBMPlexSansThai_1 =>
-      theme.textTheme.headlineSmall!.iBMPlexSansThai;
 // Label text style
-  static get labelLargeIBMPlexSansThaiGreenA700 =>
+  static get labelLargeIBMPlexSansThaiGreenA70001 =>
       theme.textTheme.labelLarge!.iBMPlexSansThai.copyWith(
-        color: appTheme.greenA700,
+        color: appTheme.greenA70001,
         fontWeight: FontWeight.w500,
       );
-  static get labelLargeIBMPlexSansThaiGreenA700Medium =>
+  static get labelLargeIBMPlexSansThaiGreenA70001Medium =>
       theme.textTheme.labelLarge!.iBMPlexSansThai.copyWith(
-        color: appTheme.greenA700,
+        color: appTheme.greenA70001,
         fontWeight: FontWeight.w500,
       );
-  static get labelLargeTeal300 => theme.textTheme.labelLarge!.copyWith(
-        color: appTheme.teal300,
-        fontWeight: FontWeight.w500,
-      );
-  static get labelMediumGreenA700 => theme.textTheme.labelMedium!.copyWith(
-        color: appTheme.greenA700,
+  static get labelMediumGreenA70001 => theme.textTheme.labelMedium!.copyWith(
+        color: appTheme.greenA70001,
       );
   static get labelMediumWhiteA700 => theme.textTheme.labelMedium!.copyWith(
         color: appTheme.whiteA700,
@@ -96,20 +86,8 @@ class CustomTextStyles {
         color: appTheme.black90001,
         fontWeight: FontWeight.w400,
       );
-  static get titleLargeGray600 => theme.textTheme.titleLarge!.copyWith(
-        color: appTheme.gray600,
-        fontWeight: FontWeight.w600,
-      );
-  static get titleMediumGreenA700 => theme.textTheme.titleMedium!.copyWith(
-        color: appTheme.greenA700,
-      );
-  static get titleSmallGray900 => theme.textTheme.titleSmall!.copyWith(
-        color: appTheme.gray900,
-        fontWeight: FontWeight.w500,
-      );
   static get titleSmallInterWhiteA700 =>
       theme.textTheme.titleSmall!.inter.copyWith(
         color: appTheme.whiteA700,
-        fontWeight: FontWeight.w500,
       );
 }

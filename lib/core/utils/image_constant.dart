@@ -7,6 +7,10 @@ class ImageConstant {
   static String imgAkarIconsHomeAlt1 =
       '$imagePath/img_akar_icons_home_alt1.svg';
 
+  static String imgNav = '$imagePath/img_nav.svg';
+
+  static String imgUser = '$imagePath/img_user.svg';
+
   static String imgSearch = '$imagePath/img_search.svg';
 
 // home_One images
@@ -14,9 +18,10 @@ class ImageConstant {
 
   static String imgFrame24 = '$imagePath/img_frame_24.svg';
 
-  static String imgFrame = '$imagePath/img_frame.png';
+  static String imgGroupGreenA70001 = '$imagePath/img_group_green_a700_01.png';
 
-  static String imgFrameGreenA700 = '$imagePath/img_frame_green_a700.svg';
+  static String imgGroupGreenA7000159x242 =
+      '$imagePath/img_group_green_a700_01_59x242.svg';
 
   static String imgGroup49 = '$imagePath/img_group_49.png';
 
@@ -31,7 +36,7 @@ class ImageConstant {
   static String imgMdiCreditCardScanOutline =
       '$imagePath/img_mdi_credit_card_scan_outline.svg';
 
-  static String imgGroup103 = '$imagePath/img_group_103.svg';
+  static String imgGroup157 = '$imagePath/img_group_157.svg';
 
   static String imgTelevision = '$imagePath/img_television.svg';
 
@@ -54,11 +59,11 @@ class ImageConstant {
 
   static String imgGroup = '$imagePath/img_group.svg';
 
-  static String imgGroup17 = '$imagePath/img_group_17.svg';
+  static String imgGroup42 = '$imagePath/img_group_42.svg';
 
-  static String imgGroup20 = '$imagePath/img_group_20.svg';
+  static String imgGroup58 = '$imagePath/img_group_58.svg';
 
-  static String imgGroup104 = '$imagePath/img_group_104.png';
+  static String imgGroup158 = '$imagePath/img_group_158.png';
 
   static String imgRectangle191 = '$imagePath/img_rectangle_191.png';
 
@@ -82,37 +87,6 @@ class ImageConstant {
   static String imgArrowDown = '$imagePath/img_arrow_down.svg';
 
   static String imgUimRedo = '$imagePath/img_uim_redo.svg';
-
-// profile images
-  static String imgArrowdownBlueGray10001 =
-      '$imagePath/img_arrowdown_blue_gray_100_01.svg';
-
-// profile - Tab Container images
-  static String imgFrame81 = '$imagePath/img_frame_81.svg';
-
-  static String imgGroup23 = '$imagePath/img_group_23.svg';
-
-  static String imgVector = '$imagePath/img_vector.png';
-
-  static String imgGroupLime20001 = '$imagePath/img_group_lime_200_01.svg';
-
-  static String imgGroupCyan900 = '$imagePath/img_group_cyan_900.svg';
-
-  static String imgAkarIconsEdit = '$imagePath/img_akar_icons_edit.svg';
-
-  static String imgCiCopy = '$imagePath/img_ci_copy.svg';
-
-  static String imgGroupLime100 = '$imagePath/img_group_lime_100.svg';
-
-  static String imgAkarIconsHomeAlt1Gray700 =
-      '$imagePath/img_akar_icons_home_alt1_gray_700.svg';
-
-  static String imgSearchGreenA700 = '$imagePath/img_search_green_a700.svg';
-
-// Common images
-  static String imgNav = '$imagePath/img_nav.svg';
-
-  static String imgUser = '$imagePath/img_user.svg';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
 }

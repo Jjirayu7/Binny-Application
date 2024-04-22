@@ -10,11 +10,8 @@ class AppDecoration {
   static BoxDecoration get fillBlueGray => BoxDecoration(
         color: appTheme.blueGray100,
       );
-  static BoxDecoration get fillGreen => BoxDecoration(
-        color: appTheme.green50,
-      );
   static BoxDecoration get fillGreenA => BoxDecoration(
-        color: appTheme.greenA700,
+        color: appTheme.greenA70001,
       );
   static BoxDecoration get fillPinkA => BoxDecoration(
         color: appTheme.pinkA10001,
@@ -34,14 +31,7 @@ class AppDecoration {
         gradient: LinearGradient(
           begin: Alignment(0.32, 1),
           end: Alignment(0.91, 0.05),
-          colors: [appTheme.gray90001, appTheme.blueGray900],
-        ),
-      );
-  static BoxDecoration get gradientLightBlueToWhiteA => BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment(0.5, 0),
-          end: Alignment(0.5, 0.29),
-          colors: [appTheme.lightBlue200, appTheme.whiteA700],
+          colors: [appTheme.gray90002, appTheme.blueGray900],
         ),
       );
 // Outline decorations
@@ -62,21 +52,6 @@ class AppDecoration {
           strokeAlign: BorderSide.strokeAlignOutside,
         ),
       );
-  static BoxDecoration get outlineGray100 => BoxDecoration(
-        color: appTheme.whiteA700,
-        border: Border.all(
-          color: appTheme.gray100,
-          width: 1.h,
-        ),
-      );
-  static BoxDecoration get outlineGray300 => BoxDecoration(
-        color: appTheme.whiteA700,
-        border: Border.all(
-          color: appTheme.gray300,
-          width: 1.h,
-          strokeAlign: BorderSide.strokeAlignOutside,
-        ),
-      );
 }
 
 class BorderRadiusStyle {
@@ -84,18 +59,12 @@ class BorderRadiusStyle {
   static BorderRadius get circleBorder11 => BorderRadius.circular(
         11.h,
       );
-  static BorderRadius get circleBorder57 => BorderRadius.circular(
-        57.h,
-      );
 // Custom borders
-  static BorderRadius get customBorderTL10 => BorderRadius.vertical(
-        top: Radius.circular(10.h),
-      );
   static BorderRadius get customBorderTL14 => BorderRadius.only(
         topLeft: Radius.circular(14.h),
       );
-  static BorderRadius get customBorderTL5 => BorderRadius.vertical(
-        top: Radius.circular(5.h),
+  static BorderRadius get customBorderTL3 => BorderRadius.vertical(
+        top: Radius.circular(3.h),
       );
 // Rounded borders
   static BorderRadius get roundedBorder14 => BorderRadius.circular(

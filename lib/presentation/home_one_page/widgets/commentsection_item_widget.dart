@@ -16,7 +16,7 @@ class CommentsectionItemWidget extends StatelessWidget {
         alignment: Alignment.bottomRight,
         child: Container(
           margin: EdgeInsets.only(top: 262.v),
-          padding: EdgeInsets.all(9.h),
+          padding: EdgeInsets.fromLTRB(2.h, 90.v, 9.h, 90.v),
           decoration: AppDecoration.black.copyWith(
             borderRadius: BorderRadiusStyle.circleBorder11,
           ),

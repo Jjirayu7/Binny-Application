@@ -39,11 +39,6 @@ class ThemeHelper {
       visualDensity: VisualDensity.standard,
       colorScheme: colorScheme,
       textTheme: TextThemes.textTheme(colorScheme),
-      dividerTheme: DividerThemeData(
-        thickness: 17,
-        space: 17,
-        color: appTheme.gray900,
-      ),
     );
   }
 
@@ -81,12 +76,6 @@ class TextThemes {
           fontFamily: 'Inter',
           fontWeight: FontWeight.w500,
         ),
-        headlineLarge: TextStyle(
-          color: appTheme.gray900,
-          fontSize: 32.fSize,
-          fontFamily: 'IBM Plex Sans Thai',
-          fontWeight: FontWeight.w500,
-        ),
         headlineSmall: TextStyle(
           color: appTheme.gray900,
           fontSize: 24.fSize,
@@ -118,10 +107,10 @@ class TextThemes {
           fontWeight: FontWeight.w500,
         ),
         titleSmall: TextStyle(
-          color: appTheme.gray600,
+          color: appTheme.gray900,
           fontSize: 14.fSize,
           fontFamily: 'IBM Plex Sans Thai',
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w500,
         ),
       );
 }
@@ -138,44 +127,27 @@ class PrimaryColors {
   Color get black90001 => Color(0XFF000000);
 // BlueGray
   Color get blueGray100 => Color(0XFFD2D2D2);
-  Color get blueGray10001 => Color(0XFFCCCCCC);
   Color get blueGray10002 => Color(0XFFD9D9D9);
   Color get blueGray400 => Color(0XFF888888);
   Color get blueGray900 => Color(0XFF2F2E2E);
-// Cyan
-  Color get cyan900 => Color(0XFF045759);
-// DeepOrange
-  Color get deepOrange100 => Color(0XFFEECFAA);
 // Gray
-  Color get gray100 => Color(0XFFF2F2F2);
   Color get gray200 => Color(0XFFEFEFEF);
-  Color get gray300 => Color(0XFFE2E2E2);
   Color get gray400 => Color(0XFFC5C5C5);
-  Color get gray600 => Color(0XFF7A7A7A);
   Color get gray700 => Color(0XFF6A6A6A);
   Color get gray70001 => Color(0XFF5C5C5C);
   Color get gray900 => Color(0XFF232323);
-  Color get gray90001 => Color(0XFF1D1D1D);
+  Color get gray90002 => Color(0XFF1D1D1D);
 // Green
-  Color get green100 => Color(0XFFC4E7D9);
   Color get green200 => Color(0XFF9FFFA8);
-  Color get green50 => Color(0XFFE0F0E4);
   Color get green800 => Color(0XFF3E7232);
   Color get green900 => Color(0XFF02682D);
-  Color get greenA700 => Color(0XFF02C275);
-// LightBlue
-  Color get lightBlue200 => Color(0XFF7ED9F5);
-// Lime
-  Color get lime100 => Color(0XFFE9FBC6);
-  Color get lime200 => Color(0XFFD7EEAA);
-  Color get lime20001 => Color(0XFFD7F9A2);
+  Color get greenA70001 => Color(0XFF02C275);
 // Orange
   Color get orange300 => Color(0XFFE3A965);
 // Pink
   Color get pinkA100 => Color(0XFFFB7DB4);
   Color get pinkA10001 => Color(0XFFFB7DB3);
 // Teal
-  Color get teal300 => Color(0XFF4FB78D);
   Color get teal800 => Color(0XFF0F7B50);
 // White
   Color get whiteA700 => Color(0XFFFFFFFF);

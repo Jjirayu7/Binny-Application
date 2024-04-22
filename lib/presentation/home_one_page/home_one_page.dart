@@ -39,20 +39,20 @@ class HomeOnePage extends StatelessWidget {
               alignment: Alignment.topLeft,
               children: [
                 CustomImageView(
-                  imagePath: ImageConstant.imgFrame,
-                  height: 49.v,
-                  width: 104.h,
+                  imagePath: ImageConstant.imgGroupGreenA70001,
+                  height: 44.v,
+                  width: 80.h,
                   alignment: Alignment.topLeft,
-                  margin: EdgeInsets.only(top: 37.v),
+                  margin: EdgeInsets.only(top: 125.v),
                 ),
                 CustomImageView(
-                  imagePath: ImageConstant.imgFrameGreenA700,
-                  height: 66.v,
+                  imagePath: ImageConstant.imgGroupGreenA7000159x242,
+                  height: 59.v,
                   width: 242.h,
                   alignment: Alignment.topLeft,
                   margin: EdgeInsets.only(
                     left: 30.h,
-                    top: 12.v,
+                    top: 110.v,
                   ),
                 ),
                 CustomImageView(
@@ -60,11 +60,12 @@ class HomeOnePage extends StatelessWidget {
                   height: 164.v,
                   width: 195.h,
                   alignment: Alignment.topRight,
+                  margin: EdgeInsets.only(top: 55.v),
                 ),
                 Align(
                   alignment: Alignment.bottomCenter,
                   child: SizedBox(
-                    height: 1174.v,
+                    height: 600.v,
                     width: double.maxFinite,
                     child: Stack(
                       alignment: Alignment.topCenter,
@@ -72,7 +73,7 @@ class HomeOnePage extends StatelessWidget {
                         Align(
                           alignment: Alignment.center,
                           child: Container(
-                            height: 1174.v,
+                            height: 1096.v,
                             width: double.maxFinite,
                             decoration: BoxDecoration(
                               color: appTheme.whiteA700,
@@ -93,57 +94,56 @@ class HomeOnePage extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Align(
-                          alignment: Alignment.topCenter,
-                          child: Container(
-                            height: 170.v,
-                            width: 369.h,
-                            margin: EdgeInsets.only(top: 453.v),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(
-                                8.h,
-                              ),
-                              gradient: LinearGradient(
-                                begin: Alignment(0.5, 0),
-                                end: Alignment(0.5, 1),
-                                colors: [
-                                  appTheme.whiteA700,
-                                  appTheme.blueGray10002
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment.bottomLeft,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              left: 23.h,
-                              bottom: 500.v,
-                            ),
-                            child: Text(
-                              "ปัญหาชวนคุย",
-                              style:
-                                  CustomTextStyles.headlineSmallIBMPlexSansThai,
-                            ),
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment.bottomLeft,
-                          child: Padding(
-                            padding: EdgeInsets.only(
-                              left: 23.h,
-                              bottom: 480.v,
-                            ),
-                            child: Text(
-                              "ร่วมตอบคำถาม หาทางออกไปกับกระทู้ของเพื่อน ๆ",
-                              style: theme.textTheme.bodyMedium,
-                            ),
-                          ),
-                        ),
-                        _buildColumncontactte(context),
-                        _buildUserprofile(context),
-                        _buildCommentsection(context)
+                        _buildContactTestimonials(context),
+                        // Align(
+                        //   alignment: Alignment.center,
+                        //   child: Container(
+                        //     height: 170.v,
+                        //     width: 369.h,
+                        //     decoration: BoxDecoration(
+                        //       borderRadius: BorderRadius.circular(
+                        //         8.h,
+                        //       ),
+                        //       gradient: LinearGradient(
+                        //         begin: Alignment(0.5, 0),
+                        //         end: Alignment(0.5, 1),
+                        //         colors: [
+                        //           appTheme.whiteA700,
+                        //           appTheme.blueGray10002
+                        //         ],
+                        //       ),
+                        //     ),
+                        //   ),
+                        // ),
+                        // Align(
+                        //   alignment: Alignment.bottomLeft,
+                        //   child: Padding(
+                        //     padding: EdgeInsets.only(
+                        //       left: 23.h,
+                        //       bottom: 422.v,
+                        //     ),
+                        //     child: Text(
+                        //       "ปัญหาชวนคุย",
+                        //       style:
+                        //           CustomTextStyles.headlineSmallIBMPlexSansThai,
+                        //     ),
+                        //   ),
+                        // ),
+                        // Align(
+                        //   alignment: Alignment.bottomLeft,
+                        //   child: Padding(
+                        //     padding: EdgeInsets.only(
+                        //       left: 23.h,
+                        //       bottom: 402.v,
+                        //     ),
+                        //     child: Text(
+                        //       "ร่วมตอบคำถาม หาทางออกไปกับกระทู้ของเพื่อน ๆ",
+                        //       style: theme.textTheme.bodyMedium,
+                        //     ),
+                        //   ),
+                        // ),
+                        // _buildUserProfile(context),
+                        // _buildCommentSection(context)
                       ],
                     ),
                   ),
@@ -161,7 +161,10 @@ class HomeOnePage extends StatelessWidget {
     return CustomAppBar(
       title: AppbarTitleImage(
         imagePath: ImageConstant.imgSettings,
-        margin: EdgeInsets.only(left: 32.h),
+        margin: EdgeInsets.only(
+          left: 32.h,
+          top: 9.v,
+        ),
       ),
       actions: [
         AppbarTrailingImage(
@@ -173,7 +176,7 @@ class HomeOnePage extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildColumncontactte(BuildContext context) {
+  Widget _buildContactTestimonials(BuildContext context) {
     return SizedBox(
       width: double.maxFinite,
       child: Align(
@@ -181,7 +184,7 @@ class HomeOnePage extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.only(
             left: 26.h,
-            top: 20.v,
+            top: 22.v,
             right: 26.h,
           ),
           child: Column(
@@ -193,12 +196,12 @@ class HomeOnePage extends StatelessWidget {
                   child: ListView.separated(
                     padding: EdgeInsets.only(
                       left: 3.h,
-                      right: 11.h,
+                      right: 12.h,
                     ),
                     scrollDirection: Axis.horizontal,
                     separatorBuilder: (context, index) {
                       return SizedBox(
-                        width: 20.h,
+                        width: 10.h,
                       );
                     },
                     itemCount: 4,
@@ -208,12 +211,13 @@ class HomeOnePage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 12.v),
+              SizedBox(height: 11.v),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 1.h),
+                height: 311.v,
                 padding: EdgeInsets.symmetric(
                   horizontal: 19.h,
-                  vertical: 5.v,
+                  vertical: 1.v,
                 ),
                 decoration: AppDecoration.black.copyWith(
                   borderRadius: BorderRadiusStyle.roundedBorder14,
@@ -229,7 +233,7 @@ class HomeOnePage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
-                            width: 71.h,
+                            width: 75.h,
                             margin: EdgeInsets.only(top: 5.v),
                             padding: EdgeInsets.symmetric(
                               horizontal: 8.h,
@@ -319,36 +323,93 @@ class HomeOnePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
+                  SizedBox(
                     height: 155.v,
                     width: 191.h,
-                    decoration: AppDecoration.outlineBlack,
                     child: Stack(
                       alignment: Alignment.bottomCenter,
                       children: [
                         Align(
                           alignment: Alignment.center,
-                          child: Container(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 13.h,
-                              vertical: 4.v,
-                            ),
-                            decoration: AppDecoration.outlineGray.copyWith(
+                          child: Card(
+                            clipBehavior: Clip.antiAlias,
+                            elevation: 0,
+                            margin: EdgeInsets.all(0),
+                            color: appTheme.gray900,
+                            shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                color: appTheme.gray900,
+                                width: 1.h,
+                              ),
                               borderRadius: BorderRadiusStyle.roundedBorder14,
                             ),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "ชุมชนคนรักษ์โลก",
-                                  style: theme.textTheme.titleMedium,
-                                ),
-                                Text(
-                                  "Let’s join the community!",
-                                  style: CustomTextStyles.bodySmallInter,
-                                )
-                              ],
+                            child: Container(
+                              height: 154.v,
+                              width: 189.h,
+                              decoration: AppDecoration.outlineGray.copyWith(
+                                borderRadius: BorderRadiusStyle.roundedBorder14,
+                              ),
+                              child: Stack(
+                                alignment: Alignment.topLeft,
+                                children: [
+                                  Align(
+                                    alignment: Alignment.topLeft,
+                                    child: Padding(
+                                      padding: EdgeInsets.only(
+                                        left: 13.h,
+                                        top: 4.v,
+                                      ),
+                                      child: Text(
+                                        "ชุมชนคนรักษ์โลก",
+                                        style: theme.textTheme.titleMedium,
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: Alignment.topLeft,
+                                    child: Padding(
+                                      padding: EdgeInsets.only(
+                                        left: 13.h,
+                                        top: 29.v,
+                                      ),
+                                      child: Text(
+                                        "Let’s join the community!",
+                                        style: CustomTextStyles.bodySmallInter,
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: Alignment.center,
+                                    child: Container(
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 13.h,
+                                        vertical: 4.v,
+                                      ),
+                                      decoration:
+                                          AppDecoration.outlineGray.copyWith(
+                                        borderRadius:
+                                            BorderRadiusStyle.roundedBorder14,
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "ชุมชนคนรักษ์โลก",
+                                            style: theme.textTheme.titleMedium,
+                                          ),
+                                          Text(
+                                            "Let’s join the community!",
+                                            style:
+                                                CustomTextStyles.bodySmallInter,
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -387,7 +448,7 @@ class HomeOnePage extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: fs.Svg(
-                                          ImageConstant.imgGroup103,
+                                          ImageConstant.imgGroup157,
                                         ),
                                         fit: BoxFit.cover,
                                       ),
@@ -405,6 +466,7 @@ class HomeOnePage extends StatelessWidget {
                                               child: VerticalDivider(
                                                 width: 3.h,
                                                 thickness: 3.v,
+                                                color: appTheme.gray900,
                                               ),
                                             ),
                                           ),
@@ -414,9 +476,6 @@ class HomeOnePage extends StatelessWidget {
                                               ImageConstant.imgTelevision,
                                           height: 11.v,
                                           width: 29.h,
-                                          radius: BorderRadius.vertical(
-                                            top: Radius.circular(5.h),
-                                          ),
                                           alignment: Alignment.bottomRight,
                                           margin: EdgeInsets.only(right: 7.h),
                                         ),
@@ -430,6 +489,7 @@ class HomeOnePage extends StatelessWidget {
                                               child: VerticalDivider(
                                                 width: 3.h,
                                                 thickness: 3.v,
+                                                color: appTheme.gray900,
                                               ),
                                             ),
                                           ),
@@ -462,7 +522,7 @@ class HomeOnePage extends StatelessWidget {
                                     decoration:
                                         AppDecoration.fillBlueGray.copyWith(
                                       borderRadius:
-                                          BorderRadiusStyle.customBorderTL5,
+                                          BorderRadiusStyle.customBorderTL3,
                                     ),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
@@ -689,7 +749,7 @@ class HomeOnePage extends StatelessWidget {
                                     height: 36.v,
                                     width: 191.h,
                                     decoration: BoxDecoration(
-                                      color: appTheme.greenA700,
+                                      color: appTheme.greenA70001,
                                       borderRadius: BorderRadius.vertical(
                                         bottom: Radius.circular(14.h),
                                       ),
@@ -749,16 +809,16 @@ class HomeOnePage extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildUserprofile(BuildContext context) {
+  Widget _buildUserProfile(BuildContext context) {
     return Align(
       alignment: Alignment.bottomRight,
       child: SizedBox(
-        height: 1174.v,
+        height: 1096.v,
         child: ListView.separated(
           padding: EdgeInsets.only(
             left: 22.h,
             top: 932.v,
-            bottom: 101.v,
+            bottom: 23.v,
           ),
           scrollDirection: Axis.horizontal,
           separatorBuilder: (context, index) {
@@ -776,16 +836,16 @@ class HomeOnePage extends StatelessWidget {
   }
 
   /// Section Widget
-  Widget _buildCommentsection(BuildContext context) {
+  Widget _buildCommentSection(BuildContext context) {
     return Align(
       alignment: Alignment.bottomRight,
       child: SizedBox(
-        height: 1174.v,
+        height: 1096.v,
         child: ListView.separated(
           padding: EdgeInsets.only(
             left: 23.h,
             top: 438.v,
-            bottom: 258.v,
+            bottom: 180.v,
           ),
           scrollDirection: Axis.horizontal,
           separatorBuilder: (context, index) {
